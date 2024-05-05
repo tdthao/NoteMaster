@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.NoteMaster" parent="Theme.MaterialComponents.Light">
+        <!-- Màu nền của ứng dụng -->
+        <item name="android:windowBackground">@color/app_background_color</item>
+
+        <!-- Màu chủ đạo của ứng dụng -->
+        <item name="colorPrimary">@color/primary_color</item>
+
+        <!-- Màu chú thích chủ đạo của ứng dụng -->
+        <item name="colorPrimaryDark">@color/primary_dark_color</item>
+
+        <!-- Màu chữ chủ đạo của ứng dụng -->
+        <item name="android:textColorPrimary">@color/text_primary_color</item>
+
+        <!-- Hiệu ứng khi nhấn vào nút -->
+        <item name="android:colorButtonNormal">@color/button_normal_color</item>
+    </style>
+
+    <style name="Theme.NoteMaster" parent="Base.Theme.NoteMaster" />
+</resources>

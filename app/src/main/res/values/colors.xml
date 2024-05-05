@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="yellow">#FF9800</color>
+    <color name="blue">#3CA9DA</color>
+    <color name="colormenucheck">#86D2F4</color>
+    <color name="colorbackgroundtrangchu">#EFEDE9</color>
+    <color name="gray">#BAB6B1</color>
+    <color name="red">#FB2919</color>
+    <color name="gray2">#E1E0DF</color>
+    <color name="gray3">#F3F1EF</color>
+    <color name="gray4">#E8E7E6</color>
+
+    <!-- Màu nền của ứng dụng -->
+    <color name="app_background_color">#F5F5F5</color>
+
+    <!-- Màu chủ đạo của ứng dụng -->
+    <color name="primary_color">#2196F3</color>
+
+    <!-- Màu chú thích chủ đạo của ứng dụng -->
+    <color name="primary_dark_color">#1976D2</color>
+
+    <!-- Màu chữ chủ đạo của ứng dụng -->
+    <color name="text_primary_color">#000000</color>
+
+    <!-- Màu của nút bình thường -->
+    <color name="button_normal_color">#FF5733</color>
+</resources>

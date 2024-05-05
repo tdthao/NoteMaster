@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/setKey"
+        android:icon="@drawable/baseline_key_24"
+        android:title="Cài mật khẩu" />
+
+    <item
+        android:id="@+id/deleteNote"
+        android:icon="@drawable/baseline_delete_outline_24"
+        android:title="Xóa" />
+</menu>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ActivityChitietghichu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ChiTietGhiChu">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutTitleChitietgc"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gray2">
+
+        <ImageView
+            android:id="@+id/btnBackdsgc"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:src="@drawable/arrowleft" />
+
+        <TextView
+            android:id="@+id/tvTimeCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="ascscasvasv"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnFixnote"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/pencil" />
+
+        <ImageView
+            android:id="@+id/btnoption"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:layout_toLeftOf="@id/btnFixnote"
+            android:src="@drawable/menubar" />
+
+        <TextView
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:text="Lưu"
+            android:textColor="@color/blue"
+            android:textSize="17dp"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutNameFolder"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/RelativeLayoutTitleChitietgc"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/imvfolder"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/iconfolder" />
+
+        <TextView
+            android:id="@+id/tvNameFolder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/imvfolder"
+            android:text="Name folder"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutTitlegc"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/RelativeLayoutNameFolder"
+        android:layout_marginTop="2dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvTitleNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:text="Tilte chi chu"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutEditext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RelativeLayoutTitlegc"
+        android:layout_marginTop="2dp"
+        android:background="@color/white">
+
+        <EditText
+            android:id="@+id/edtextContentgc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:backgroundTint="@android:color/transparent"
+            android:text="edittext"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/RelativeLayoutEditext"
+        android:layout_marginTop="4dp">
+
+        <ImageView
+            android:id="@+id/btnAddImage"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/addgallery"
+            android:text="Thêm ảnh"
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/imgtest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnAddImage" />
+
+        <ListView
+            android:id="@+id/lvImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/imgtest"
+            android:layout_marginTop="6dp"
+            android:background="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

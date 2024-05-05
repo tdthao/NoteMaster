@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_below="@+id/RelativeLayoutTitleDsghichu"
+    android:layout_marginBottom="1dp"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNamenote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="2dp"
+                android:text="Tên ghi chú"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tvTimecreate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4/10/2023 1:52"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/iconrightarrow"
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@id/btnDeleteItem"
+            android:src="@drawable/iconrightarrows" />
+
+        <Button
+            android:id="@+id/btnDeleteItem"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@color/red"
+            android:text="Xóa"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/iconrightarrow2"
+            android:layout_width="28dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/iconrightarrows" />
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

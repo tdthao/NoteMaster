@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_tab_TrangChu"
+        android:icon="@drawable/iconnotes"
+        android:title="Ghi Chú" />
+    <item
+        android:id="@+id/menu_tab_Calendar"
+        android:icon="@drawable/iconcalendar"
+        android:title="Lịch" />
+    <item
+        android:id="@+id/menu_tab_Image"
+        android:icon="@drawable/baseline_access_alarm_24"
+        android:title="Nhắc nhở" />
+    <item
+        android:id="@+id/menu_tab_Setting"
+        android:icon="@drawable/iconsetting"
+        android:title="Cài Đặt" />
+</menu>

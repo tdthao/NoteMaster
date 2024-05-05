@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray2"
+    tools:context=".Activity.TimkiemGhichu">
+
+    <RelativeLayout
+        android:id="@+id/RLSearchTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/gray3">
+
+        <ImageView
+            android:id="@+id/iconarrowLeft"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="22dp"
+            android:src="@drawable/arrowleft" />
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iconarrowLeft"
+            android:background="@drawable/bg_white_corner">
+
+            <EditText
+                android:id="@+id/edSearch"
+                android:layout_width="220dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/transparent"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iconDelete"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@+id/border"
+                android:src="@drawable/closebutton" />
+
+            <ImageView
+                android:id="@+id/border"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/iconSearch"
+                android:background="@color/gray"
+                tools:ignore="UnknownIdInLayout" />
+
+            <ImageView
+                android:id="@+id/iconSearch"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/iconsearch" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RLContainerSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RLSearchTitle">
+
+        <TextView
+            android:id="@+id/tvSumResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số lượng"
+            android:textColor="@color/black"
+            android:padding="12dp"
+            android:textSize="14dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvNoteResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvSumResult" />
+    </RelativeLayout>
+
+</RelativeLayout>
